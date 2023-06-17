@@ -9,17 +9,14 @@ public class ArrayProcessing {
                 .mapToInt(Integer::parseInt)
                 .toArray();                             /* reading array from the console */
 
-        int minIndex = getMinElementIndex(array);
-        System.out.println("Index of the element with minimum value: " + minIndex);
+        System.out.println("Index of the element with minimum value: " + getMinElementIndex(array));
 
-        int arraySum = sum(array);
-        System.out.println("Sum of all elements in the array: " + arraySum);
+        System.out.println("Sum of all elements in the array: " + sum(array));
 
         System.out.print("Array elements: ");
         print(array);
 
-        int largestSum = findLargestSumSubarray(array);
-        System.out.println("Largest sum of a contiguous subarray: " + largestSum);
+        System.out.println("Largest sum of a contiguous subarray: " + findLargestSumSubarray(array));
     }
     /* method for the index of minimal element */
     public static int getMinElementIndex(int[] array) {
