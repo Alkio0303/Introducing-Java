@@ -7,7 +7,7 @@ public class ArrayProcessing {
         int[] array = Arrays.stream(scan.nextLine()
                 .split(", "))
                 .mapToInt(Integer::parseInt)
-                .toArray();
+                .toArray();                             /* reading array from the console */
 
         int minIndex = getMinElementIndex(array);
         System.out.println("Index of the element with minimum value: " + minIndex);
@@ -21,6 +21,7 @@ public class ArrayProcessing {
         int largestSum = findLargestSumSubarray(array);
         System.out.println("Largest sum of a contiguous subarray: " + largestSum);
     }
+    /* method for the index of minimal element */
     public static int getMinElementIndex(int[] array) {
         int minIndex = 0;
         int minValue = array[0];
@@ -34,6 +35,7 @@ public class ArrayProcessing {
 
         return minIndex;
     }
+    /* method for the sum of every element in the array*/
     public static int sum(int[] array) {
         int sum = 0;
 
@@ -43,12 +45,14 @@ public class ArrayProcessing {
 
         return sum;
     }
+    /* prints the elements of the array */
     public static void print(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
         System.out.println();
     }
+    /* finds the largest sum of subarrays in the array */
     public static int findLargestSumSubarray(int[] array) {
         int maxSum = array[0];
         int currentSum = array[0];
