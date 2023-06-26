@@ -1,45 +1,47 @@
 import java.util.Scanner;
-import java.util.logging.Logger;
 
+//This utility class calculates the greatest common divisor of two integers
 public class GreatestCommonDivisorOfTwoIntegers {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
         int firstNumber = Integer.parseInt(scan.nextLine());
-        int secondNumber = Integer.parseInt(scan.nextLine()); /*getting input from the console */
+        int secondNumber = Integer.parseInt(scan.nextLine());
 
-        System.out.println(GCD(firstNumber, secondNumber));
+        System.out.println(gcd(firstNumber, secondNumber));
+        System.out.println(lcd(firstNumber, secondNumber));
     }
-    /* method for calculating the GCD */
-    public static String GCD(int num1, int num2){   /*parameters are the numbers which are read from the console */
-        while(num1 != num2) {           /* while loop until the numbers are equal. If the numbers are equal, the GCD is found */
-
-            if(num1 > num2) {           /*By subtracting the smaller number from the bigger at the end the GCD will be found */
-                num1 -= num2;
-            }
-                                        /*Checking which number is smaller*/
-            else {
-                num2 -= num1;
-            }
-        }
-
-        return "GCD: " + num1;
-    }
-
-    /* method for calculating the LCD */
-    public static String LCD(int num1, int num2){
-        int numbsMultiplication = num1 * num2;      /*it is needed for the formula for calculating the lcm */
-        while(num1 != num2) {                       /*calculating the GCD */
-
+    /**
+     * calculates the GCD of two integers
+     * @param num1, num2
+     **/
+    public static int gcd(int num1, int num2){
+        while(num1 != num2) {
             if(num1 > num2) {
                 num1 -= num2;
             }
-
             else {
                 num2 -= num1;
             }
         }
-        int lcm = numbsMultiplication / num1;      /*after the loop num1 is the GCD of the two numbers*/
-        return "LCM: is " + lcm;
+        return num1;
+    }
+
+    /**
+     * calculates the LCD of two integers
+     * @param num1, num2
+     **/
+    public static int lcd(int num1, int num2){
+        int numbsMultiplication = num1 * num2;
+        while(num1 != num2) {
+            if(num1 > num2) {
+                num1 -= num2;
+            }
+            else {
+                num2 -= num1;
+            }
+        }
+        int lcm = numbsMultiplication / num1;
+        return lcm;
     }
 }
