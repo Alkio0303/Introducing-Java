@@ -8,13 +8,14 @@ public class GreatestCommonDivisorOfTwoIntegers {
         int firstNumber = Integer.parseInt(scan.nextLine());
         int secondNumber = Integer.parseInt(scan.nextLine());
 
-        System.out.println(GCD(firstNumber, secondNumber));
+        System.out.println(gcd(firstNumber, secondNumber));
+        System.out.println(lcd(firstNumber, secondNumber));
     }
     /**
      * calculates the GCD of two integers
      * @param num1, num2
      **/
-    public static String GCD(int num1, int num2){
+    public static int gcd(int num1, int num2){
         while(num1 != num2) {
             if(num1 > num2) {
                 num1 -= num2;
@@ -23,14 +24,14 @@ public class GreatestCommonDivisorOfTwoIntegers {
                 num2 -= num1;
             }
         }
-        return "GCD: " + num1;
+        return num1;
     }
 
     /**
      * calculates the LCD of two integers
      * @param num1, num2
      **/
-    public static String LCD(int num1, int num2){
+    public static int lcd(int num1, int num2){
         int numbsMultiplication = num1 * num2;
         while(num1 != num2) {
             if(num1 > num2) {
@@ -41,6 +42,6 @@ public class GreatestCommonDivisorOfTwoIntegers {
             }
         }
         int lcm = numbsMultiplication / num1;
-        return "LCM: is " + lcm;
+        return lcm;
     }
 }

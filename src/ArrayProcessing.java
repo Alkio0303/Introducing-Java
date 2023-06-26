@@ -9,15 +9,6 @@ public class ArrayProcessing {
                         .split(", "))
                 .mapToInt(Integer::parseInt)
                 .toArray();
-
-        System.out.println("Index of the element with minimum value: " + getMinElementIndex(array));
-
-        System.out.println("Sum of all elements in the array: " + sum(array));
-
-        System.out.print("Array elements: ");
-        print(array);
-
-        System.out.println("Largest sum of a contiguous subarray: " + findLargestSumSubarray(array));
     }
     /**
      * gets the index of the minimal element in an array
