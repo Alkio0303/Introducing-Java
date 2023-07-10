@@ -19,7 +19,7 @@ public class GreatestCommonDivisorOfTwoIntegersTest {
         assertEquals(35, GreatestCommonDivisorOfTwoIntegers.lcd(a, b));
     }
     @Test
-    public void testGcdWithZero() {
+    public void test_GcdWithZero() {
         int firstNumber = 0;
         int secondNumber = 5;
 
@@ -29,7 +29,7 @@ public class GreatestCommonDivisorOfTwoIntegersTest {
     }
 
     @Test
-    public void testLcdWithZero() {
+    public void test_LcdWithZero() {
         int firstNumber = 0;
         int secondNumber = 5;
 
