@@ -1,25 +1,35 @@
-//This utility class sorts an array
+package main;
+
+/**
+ * This utility class sorts an array.
+ *
+ */
 public class QuickSortAlgorithm {
     public static void main(String[] args) {
-        int[] arr = { 10, 7, 8, 9, 1, 5 };
+        int[] arr = { 2, 3, 4, 1, 5};
         int N = arr.length;
 
         quickSort(arr, 0, N - 1);
         System.out.println("Sorted array:");
         printArr(arr);
     }
+
     /**
-     * Swaps the elements of the array
-     * @param arr, int i, int j
+     * Divides the array of two parts and then sorts them.
+     *
+     * @param arr, low, high
      */
-    static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+    static void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
     }
 
     /**
-     * decides if an element of the array is bigger or smaller than the pivot and puts the element in its appropriate place
+     * Decides if an element of the array is bigger or smaller than the pivot and puts the element in its appropriate place.
+     *
      * @param arr, low, high
      */
     static int partition(int[] arr, int low, int high) {
@@ -36,19 +46,19 @@ public class QuickSortAlgorithm {
     }
 
     /**
-     * divides the array of two parts and then sorts them
-     * @param arr, low, high
+     * Swaps the elements of the array.
+     *
+     * @param arr, int i, int j
      */
-    static void quickSort(int[] arr, int low, int high) {
-        if (low < high) {
-            int pi = partition(arr, low, high);
-            quickSort(arr, low, pi - 1);
-            quickSort(arr, pi + 1, high);
-        }
+    static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
     /**
-     * prints the array
+     * Prints the array.
+     *
      * @param arr
      */
     public static void printArr(int[] arr) {

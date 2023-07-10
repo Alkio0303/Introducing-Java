@@ -1,7 +1,12 @@
+package main;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-//This utility class has methods for processing arrays
+/**
+ * This utility class has methods for processing arrays.
+ *
+ */
 public class ArrayProcessing {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -10,8 +15,10 @@ public class ArrayProcessing {
                 .mapToInt(Integer::parseInt)
                 .toArray();
     }
+
     /**
-     * gets the index of the minimal element in an array
+     * Gets the index of the minimal element in an array.
+     *
      * @param array
      **/
     public static int getMinElementIndex(int[] array) {
@@ -25,8 +32,10 @@ public class ArrayProcessing {
         }
         return minIndex;
     }
+
     /**
-     * sums the elements of an array
+     * Sums the elements of an array.
+     *
      * @param array
      */
     public static int sum(int[] array) {
@@ -36,8 +45,10 @@ public class ArrayProcessing {
         }
         return sum;
     }
+
     /**
-     * prints the array
+     * Prints the array.
+     *
      * @param array
      **/
     public static void print(int[] array) {
@@ -46,8 +57,10 @@ public class ArrayProcessing {
         }
         System.out.println();
     }
+
     /**
-     * finds the largest subarray
+     * Finds the largest sub array.
+     *
      * @param array
      **/
     public static int findLargestSumSubarray(int[] array) {

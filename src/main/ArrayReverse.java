@@ -1,8 +1,13 @@
+package main;
+
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-//This utility class reverses an array
+/**
+ * This utility class reverses an array.
+ *
+ */
 public class ArrayReverse {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -19,7 +24,8 @@ public class ArrayReverse {
     }
 
     /**
-     * reverses the array
+     * Reverses the array.
+     *
      * @param array
      **/
     public static void reverseArray(int[] array) {
