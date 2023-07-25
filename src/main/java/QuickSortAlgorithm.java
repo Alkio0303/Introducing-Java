@@ -1,4 +1,3 @@
-package main;
 
 /**
  * This utility class sorts an array.

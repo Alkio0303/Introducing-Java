@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -7,14 +8,14 @@ public class GreatestCommonDivisorOfTwoIntegersTest {
     public void test_gcd(){
         int a = 5;
         int b = 35;
-        assertEquals(5, GreatestCommonDivisorOfTwoIntegers.gcd(a, b));
+        Assertions.assertEquals(5, GreatestCommonDivisorOfTwoIntegers.gcd(a, b));
     }
 
     @Test
     public void test_lcd(){ 
         int a = 5;
         int b = 35;
-        assertEquals(35, GreatestCommonDivisorOfTwoIntegers.lcd(a, b));
+        Assertions.assertEquals(35, GreatestCommonDivisorOfTwoIntegers.lcd(a, b));
     }
     @Test
     public void test_GcdWithZero() {
