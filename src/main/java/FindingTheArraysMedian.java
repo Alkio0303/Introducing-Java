@@ -1,5 +1,3 @@
-
-
 /**
  * This utility class finds the median of an array.
  *

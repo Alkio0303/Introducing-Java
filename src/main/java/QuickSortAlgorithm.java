@@ -1,4 +1,3 @@
-
 /**
  * This utility class sorts an array.
  *

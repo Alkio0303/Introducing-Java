@@ -18,8 +18,6 @@ public class ArrayReverse {
         String arrayString = Arrays.stream(array)
                 .mapToObj(String::valueOf)
                 .collect(Collectors.joining(", "));
-
-        System.out.println(arrayString);
     }
 
     /**
