@@ -1,11 +1,17 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
+/**
+ * This utility class is a Hangman game in which you need to guess the word
+ *
+ */
 public class Hangman {
     private static final Logger logger = LoggerFactory.getLogger(Hangman.class);
-    private static String[] words = {"apple", "banana", "cherry", "date", "elderberry", "fig", "grape"};
+    private static final String[] words = {"apple", "banana", "cherry", "date", "elderberry", "fig", "grape"};
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -16,12 +22,9 @@ public class Hangman {
         int attempts = 6;
         boolean wordGuessed = false;
 
-        // Initialize guessedLetters array with dashes
-        for (int i = 0; i < guessedLetters.length; i++) {
-            guessedLetters[i] = '-';
-        }
 
-        System.out.println("Welcome to Hangman!");
+        Arrays.fill(guessedLetters, '-');
+
         while (attempts > 0 && !wordGuessed) {
             System.out.println("Attempts left: " + attempts);
             System.out.println("Current progress: " + new String(guessedLetters));
@@ -45,8 +48,6 @@ public class Hangman {
                 wordGuessed = true;
             }
         }
-
-        scanner.close();
 
         if (wordGuessed) {
             System.out.println("Congratulations! You guessed the word: " + wordToGuess);
