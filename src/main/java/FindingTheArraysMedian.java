@@ -1,12 +1,18 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * This utility class finds the median of an array.
  *
  */
+
 public class FindingTheArraysMedian {
+    private static final Logger logger = LoggerFactory.getLogger(FindingTheArraysMedian.class);
     public static void main(String[] args) {
+        String log4jConfigFile = System.getProperty("user.dir");
         int[] arr = {4,5,99,-1,5,6};
-        int closestPosition = PositionWithClosestSum(arr);
-        System.out.println("Position of closest element: " + closestPosition);
+        int closestPosition = positionWithClosestSum(arr);
+        logger.info("Position of closest element: " + closestPosition);
     }
 
     /**
@@ -14,7 +20,7 @@ public class FindingTheArraysMedian {
      *
      * @param arr
      */
-    public static int PositionWithClosestSum(int[] arr) {
+    public static int positionWithClosestSum(int[] arr) {
         int closestIndex = -1;
         int minDifference = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {

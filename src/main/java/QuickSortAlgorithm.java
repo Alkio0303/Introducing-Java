@@ -3,14 +3,6 @@
  *
  */
 public class QuickSortAlgorithm {
-    public static void main(String[] args) {
-        int[] arr = { 2, 3, 4, 1, 5};
-        int N = arr.length;
-
-        quickSort(arr, 0, N - 1);
-        System.out.println("Sorted array:");
-        printArr(arr);
-    }
 
     /**
      * Divides the array of two parts and then sorts them.

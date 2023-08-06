@@ -1,19 +1,8 @@
-import java.util.Arrays;
-import java.util.Scanner;
-
 /**
  * This utility class has methods for processing arrays.
  *
  */
 public class ArrayProcessing {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int[] array = Arrays.stream(scan.nextLine()
-                        .split(", "))
-                .mapToInt(Integer::parseInt)
-                .toArray();
-    }
-
     /**
      * Gets the index of the minimal element in an array.
      *

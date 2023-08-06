@@ -1,3 +1,4 @@
+import com.sirma.javacource.intro.gcd.GreatestCommonDivisorOfTwoIntegers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;

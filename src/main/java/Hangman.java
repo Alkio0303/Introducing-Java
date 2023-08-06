@@ -26,7 +26,7 @@ public class Hangman {
         Arrays.fill(guessedLetters, '-');
 
         while (attempts > 0 && !wordGuessed) {
-            System.out.println("Attempts left: " + attempts);
+            logger.info("Attempts left: " + attempts);
             System.out.println("Current progress: " + new String(guessedLetters));
             System.out.println("Enter a letter: ");
             char guess = scanner.nextLine().charAt(0);

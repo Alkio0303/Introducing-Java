@@ -108,16 +108,16 @@ Date:   Thu Jun 15 17:26:26 2023 +0300
 [32m+[m[32m  </component>[m
 [32m+[m[32m</module>[m
 \ No newline at end of file[m
-[1mdiff --git a/src/GreatestCommonDivisorOfTwoIntegers.java b/src/GreatestCommonDivisorOfTwoIntegers.java[m
+[1mdiff --git a/src/com.sirma.javacource.intro.gcd.GreatestCommonDivisorOfTwoIntegers.java b/src/com.sirma.javacource.intro.gcd.GreatestCommonDivisorOfTwoIntegers.java[m
 [1mnew file mode 100644[m
 [1mindex 0000000..d616e12[m
 [1m--- /dev/null[m
-[1m+++ b/src/GreatestCommonDivisorOfTwoIntegers.java[m
+[1m+++ b/src/com.sirma.javacource.intro.gcd.GreatestCommonDivisorOfTwoIntegers.java[m
 [36m@@ -0,0 +1,45 @@[m
 [32m+[m[32mimport java.util.Scanner;[m
 [32m+[m[32mimport java.util.logging.Logger;[m
 [32m+[m
-[32m+[m[32mpublic class GreatestCommonDivisorOfTwoIntegers {[m
+[32m+[m[32mpublic class com.sirma.javacource.intro.gcd.GreatestCommonDivisorOfTwoIntegers {[m
 [32m+[m[32m    public static void main(String[] args) {[m
 [32m+[m
 [32m+[m[32m        Scanner scan = new Scanner(System.in);[m

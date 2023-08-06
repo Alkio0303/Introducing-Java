@@ -1,3 +1,5 @@
+package com.sirma.javacource.intro.gcd;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
