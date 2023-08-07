@@ -1,3 +1,8 @@
+package com.sirma.javacource.intro.randomstringswithgivenlength;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Scanner;
 
 /**
@@ -5,14 +10,15 @@ import java.util.Scanner;
  *
  */
 public class RandomStringsWithGivenLength {
+    private static final Logger logger = LoggerFactory.getLogger(RandomStringsWithGivenLength.class);
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the length for the string: ");
+        logger.info("Enter the length for the string: ");
         int length = scanner.nextInt();
 
         String randomString = generateRandomString(length);
-        System.out.println("Generated random string: " + randomString);
+        logger.info("Generated string: " + randomString);
 
         scanner.close();
     }

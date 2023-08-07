@@ -14,10 +14,11 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-.leave
-.test.iml
-.FirstProject.iml
-.FirstProject1.iml
+leave
+test.iml
+FirstProject.iml
+FirstProject1.iml
+pom.xml
 
 ### NetBeans ###
 /nbproject/private/

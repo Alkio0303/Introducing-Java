@@ -27,8 +27,8 @@ public class Hangman {
 
         while (attempts > 0 && !wordGuessed) {
             logger.info("Attempts left: " + attempts);
-            System.out.println("Current progress: " + new String(guessedLetters));
-            System.out.println("Enter a letter: ");
+            logger.info("Current progress: " + new String(guessedLetters));
+            logger.info("Enter a letter: ");
             char guess = scanner.nextLine().charAt(0);
 
             boolean foundLetter = false;
@@ -41,7 +41,7 @@ public class Hangman {
 
             if (!foundLetter) {
                 attempts--;
-                System.out.println("Incorrect guess!");
+                logger.info("Incorrect guess!");
             }
 
             if (new String(guessedLetters).equals(wordToGuess)) {
@@ -50,9 +50,9 @@ public class Hangman {
         }
 
         if (wordGuessed) {
-            System.out.println("Congratulations! You guessed the word: " + wordToGuess);
+            logger.info("Congratulations! You guessed the word: " + wordToGuess);
         } else {
-            System.out.println("Sorry, you ran out of attempts. The word was: " + wordToGuess);
+            logger.info("Sorry, you ran out of attempts. The word was: " + wordToGuess);
         }
     }
 }

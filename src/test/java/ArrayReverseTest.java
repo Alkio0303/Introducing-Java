@@ -1,3 +1,4 @@
+import com.sirma.javacource.intro.arrayreverse.ArrayReverse;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
@@ -8,5 +9,12 @@ public class ArrayReverseTest {
         int[] expectedOutput = {6, 5, 4, 3, 2, 1};
         ArrayReverse.reverseArray(array);
         assertArrayEquals(array, expectedOutput);
+    }
+    @Test
+    public void testReverseArrayEmptyArray() {
+        int[] input = {};
+        int[] expected = {};
+        ArrayReverse.reverseArray(input);
+        assertArrayEquals(expected, input);
     }
 }

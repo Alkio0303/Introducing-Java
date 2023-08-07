@@ -1,3 +1,7 @@
+package com.sirma.javacource.intro.arrayprocessing;
+
+import com.sirma.javacource.intro.quicksortalgorithm.QuickSortAlgorithm;
+
 /**
  * This utility class has methods for processing arrays.
  *
@@ -39,10 +43,7 @@ public class ArrayProcessing {
      * @param array
      **/
     public static void print(int[] array) {
-        for (int j : array) {
-            System.out.print(j + " ");
-        }
-        System.out.println();
+        QuickSortAlgorithm.printArr(array);
     }
 
     /**
