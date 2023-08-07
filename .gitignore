@@ -19,6 +19,9 @@ test.iml
 FirstProject.iml
 FirstProject1.iml
 pom.xml
+log4j.properties
+src.iml
+.idea
 
 ### NetBeans ###
 /nbproject/private/
