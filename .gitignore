@@ -22,6 +22,8 @@ pom.xml
 log4j.properties
 src.iml
 .idea
+target
+out
 
 ### NetBeans ###
 /nbproject/private/

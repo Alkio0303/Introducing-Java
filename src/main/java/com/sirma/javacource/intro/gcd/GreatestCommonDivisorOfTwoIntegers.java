@@ -11,7 +11,6 @@ import java.util.Scanner;
  *
  */
 public class GreatestCommonDivisorOfTwoIntegers {
-    private static final Logger logger = LoggerFactory.getLogger(GreatestCommonDivisorOfTwoIntegers.class);
     /**
      * Calculates the GCD of two integers.
      *

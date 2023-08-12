@@ -1,4 +1,6 @@
 package com.sirma.javacource.intro.quicksortalgorithm;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This utility class sorts an array.
@@ -53,9 +55,4 @@ public class QuickSortAlgorithm {
      *
      * @param arr
      */
-    public static void printArr(int[] arr) {
-        for (int j : arr) {
-            System.out.print(j + " ");
-        }
-    }
 }
