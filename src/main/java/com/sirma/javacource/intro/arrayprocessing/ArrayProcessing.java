@@ -43,7 +43,7 @@ public class ArrayProcessing {
      * @param array
      **/
     public static void print(int[] array) {
-        QuickSortAlgorithm.printArr(array);
+       QuickSortAlgorithm.printArr(array);
     }
 
     /**

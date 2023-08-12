@@ -1,4 +1,4 @@
-package com.sirma.javacource.intro.findingthearraysmedian;
+package com.sirma.javacource.intro.findingarraysmedian;
 
 /**
  * This utility class finds the median of an array.
