@@ -12,14 +12,6 @@ import java.util.Scanner;
  */
 public class GreatestCommonDivisorOfTwoIntegers {
     private static final Logger logger = LoggerFactory.getLogger(GreatestCommonDivisorOfTwoIntegers.class);
-    public static void main(String[] args) {
-
-        Scanner scan = new Scanner(System.in);
-        int firstNumber = Integer.parseInt(scan.nextLine());
-        int secondNumber = Integer.parseInt(scan.nextLine());
-        gcd(firstNumber, secondNumber);
-        lcd(firstNumber, secondNumber);
-    }
     /**
      * Calculates the GCD of two integers.
      *
