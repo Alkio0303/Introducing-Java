@@ -1,6 +1,4 @@
 package com.sirma.javacource.intro.quicksortalgorithm;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * This utility class sorts an array.
