@@ -1,11 +1,5 @@
 package com.sirma.javacource.intro.gcd;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.Scanner;
-
-
 /**
  * This utility class calculates the greatest common divisor of two integers.
  *
@@ -14,7 +8,8 @@ public class GreatestCommonDivisorOfTwoIntegers {
     /**
      * Calculates the GCD of two integers.
      *
-     * @param num1, num2
+     * @param num1, first input.
+     * @param num2, second input.
      **/
     public static int gcd(int num1, int num2){
         if (num1 == 0) {
@@ -37,7 +32,8 @@ public class GreatestCommonDivisorOfTwoIntegers {
     /**
      * Calculates the LCD of two integers.
      *
-     * @param num1, num2
+     * @param num1, first input.
+     * @param num2, second input.
      **/
     public static int lcd(int num1, int num2){
         if (num1 == 0 || num2 == 0) {
@@ -52,7 +48,6 @@ public class GreatestCommonDivisorOfTwoIntegers {
                 num2 -= num1;
             }
         }
-        int lcm = numbsMultiplication / num1;
-        return lcm;
+        return numbsMultiplication / num1;
     }
 }

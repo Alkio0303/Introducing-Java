@@ -1,3 +1,5 @@
+package com.sirma.javacourse.intro.hangman;
+
 import com.sirma.javacource.intro.hangman.HangmanModel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

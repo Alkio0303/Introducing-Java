@@ -9,8 +9,8 @@ import org.slf4j.LoggerFactory;
 public class HangmanView {
     /**
      * Displaying the state of the game
-     * @param guessedWord is printed with the chars which the player guessed.
-     * @param attemptsLeft is printed so the player knows how many more attempts he has.
+     * @param guessedWord, is printed with the chars which the player guessed.
+     * @param attemptsLeft, is printed so the player knows how many more attempts he has.
      */
     private static final Logger logger = LoggerFactory.getLogger(HangmanView.class);
     public void displayGameState(String guessedWord, int attemptsLeft) {
@@ -28,5 +28,8 @@ public class HangmanView {
         } else {
             logger.info("Sorry, you lost.");
         }
+    }
+    public void promptForThePlayer() {
+        logger.info("Enter a letter: ");
     }
 }

@@ -1,3 +1,5 @@
+package com.sirma.javacourse.intro.arrayreverse;
+
 import com.sirma.javacource.intro.arrayreverse.ArrayReverse;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

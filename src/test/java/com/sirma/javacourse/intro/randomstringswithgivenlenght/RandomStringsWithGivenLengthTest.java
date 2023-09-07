@@ -1,3 +1,5 @@
+package com.sirma.javacourse.intro.randomstringswithgivenlenght;
+
 import com.sirma.javacource.intro.randomstringswithgivenlength.RandomStringsWithGivenLength;
 import org.junit.jupiter.api.Test;
 

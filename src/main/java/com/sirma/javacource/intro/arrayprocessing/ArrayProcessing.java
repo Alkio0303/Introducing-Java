@@ -8,7 +8,7 @@ public class ArrayProcessing {
     /**
      * Gets the index of the minimal element in an array.
      *
-     * @param array
+     * @param array, the input array which elements will be .
      **/
     public static int getMinElementIndex(int[] array) {
         int minIndex = 0;
@@ -25,7 +25,7 @@ public class ArrayProcessing {
     /**
      * Sums the elements of an array.
      *
-     * @param array
+     * @param array, sum its elements.
      */
     public static int sum(int[] array) {
         int sum = 0;
@@ -38,7 +38,7 @@ public class ArrayProcessing {
     /**
      * Finds the largest sub array.
      *
-     * @param array
+     * @param array, finding amongst the array sub arrays.
      **/
     public static int findLargestSumSubarray(int[] array) {
         int maxSum = array[0];

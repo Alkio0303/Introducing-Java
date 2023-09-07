@@ -11,7 +11,6 @@ public class HangmanController {
     private static final Logger logger = LoggerFactory.getLogger(HangmanController.class);
     private final HangmanModel model;
     private final HangmanView view;
-
     public HangmanController(HangmanModel model, HangmanView view) {
         this.model = model;
         this.view = view;
@@ -24,7 +23,7 @@ public class HangmanController {
         Scanner scanner = new Scanner(System.in);
         while (!model.isGameWon() && !model.isGameLost()) {
             view.displayGameState(model.getGuessedWord(), model.getAttemptsLeft());
-            logger.info("Enter a letter: ");
+            view.promptForThePlayer();
             char guess = scanner.next().charAt(0);
             model.makeGuess(guess);
         }

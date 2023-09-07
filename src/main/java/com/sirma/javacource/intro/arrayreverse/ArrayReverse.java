@@ -8,7 +8,7 @@ public class ArrayReverse {
     /**
      * Reverses the array.
      *
-     * @param array
+     * @param array, the input array which will be reversed.
      **/
     public static void reverseArray(int[] array) {
         int length = array.length;

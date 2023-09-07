@@ -1,3 +1,5 @@
+package com.sirma.javacourse.intro.arrayprocessing;
+
 import com.sirma.javacource.intro.arrayprocessing.ArrayProcessing;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

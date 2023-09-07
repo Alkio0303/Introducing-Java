@@ -1,3 +1,5 @@
+package com.sirma.javacourse.intro.summinglargenumbers;
+
 import com.sirma.javacource.intro.summinglargenumbers.SummingLargeNumbers;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;

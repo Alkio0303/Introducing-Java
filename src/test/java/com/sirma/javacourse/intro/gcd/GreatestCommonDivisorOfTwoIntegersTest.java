@@ -1,3 +1,5 @@
+package com.sirma.javacourse.intro.gcd;
+
 import com.sirma.javacource.intro.gcd.GreatestCommonDivisorOfTwoIntegers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

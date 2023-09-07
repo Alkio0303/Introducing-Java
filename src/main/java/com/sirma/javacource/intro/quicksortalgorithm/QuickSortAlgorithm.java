@@ -5,11 +5,12 @@ package com.sirma.javacource.intro.quicksortalgorithm;
  *
  */
 public class QuickSortAlgorithm {
-
     /**
      * Divides the array of two parts and then sorts them.
      *
-     * @param arr, low, high
+     * @param arr, this is the array which is divided.
+     * @param low, smallest element in the array.
+     * @param high, highest element in the array.
      */
     public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
@@ -22,7 +23,9 @@ public class QuickSortAlgorithm {
     /**
      * Decides if an element of the array is bigger or smaller than the pivot and puts the element in its appropriate place.
      *
-     * @param arr, low, high
+     * @param arr, elements from the array are used.
+     * @param low, smallest element in the array.
+     * @param high, biggest element in the array.
      */
     public static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
@@ -40,17 +43,13 @@ public class QuickSortAlgorithm {
     /**
      * Swaps the elements of the array.
      *
-     * @param arr, int i, int j
+     * @param arr, the array which will swap.
+     * @param i, position of an element which we want to swap.
+     * @param j, position of an element which we want to swap.
      */
     public static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-
-    /**
-     * Prints the array.
-     *
-     * @param arr
-     */
 }
