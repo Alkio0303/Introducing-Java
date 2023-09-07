@@ -38,11 +38,9 @@ public class HangmanModel {
     public String getGuessedWord() {
         return guessedWord.toString();
     }
-
     public int getAttemptsLeft() {
         return attemptsLeft;
     }
-
     public boolean isGameWon() {
         return guessedWord.toString().equals(word);
     }
