@@ -8,7 +8,6 @@ import java.util.Scanner;
  * This class takes user input, communicates with the model and the view.
  */
 public class HangmanController {
-    private static final Logger logger = LoggerFactory.getLogger(HangmanController.class);
     private final HangmanModel model;
     private final HangmanView view;
     public HangmanController(HangmanModel model, HangmanView view) {
