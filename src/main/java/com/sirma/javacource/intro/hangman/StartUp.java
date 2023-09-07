@@ -1,5 +1,8 @@
 package com.sirma.javacource.intro.hangman;
 
+/**
+ * Start Up class for the game
+ */
 public class StartUp {
     public static void main(String[] args) {
         String[] words = {"apple", "banana", "cherry", "grape", "orange"};

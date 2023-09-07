@@ -7,6 +7,7 @@ package com.sirma.javacource.intro.summinglargenumbers;
 public class SummingLargeNumbers {
     /**
      * This method is summing the numbers.
+     *
      * @param num1 first input.
      * @param num2 second input.
      */
